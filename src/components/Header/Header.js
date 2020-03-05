@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './../../../src/logo.svg';
-import {Link} from 'react-router-dom';
-
+import {NavLink } from 'react-router-dom';
+import './Header.css'
 const Header = ()=>{
     return(
         <header className="App-header">
@@ -9,13 +9,13 @@ const Header = ()=>{
         
        <ul>
            <li>
-               <Link to="/home">Home</Link>
+               <NavLink exact to="/" activeClassName="active">Home</NavLink >
            </li>
            <li>
-               <Link to="/about">About</Link>
+               <NavLink  to="/about" activeClassName="active">About</NavLink >
            </li>
            <li>
-               <Link to="/dashboard">Dashboard</Link>
+               <NavLink  to="/dashboard" activeClassName="active">Dashboard</NavLink >
            </li>
            
        </ul>
